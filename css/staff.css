@@ -1,0 +1,305 @@
+/* =============================================
+   staff.css — Staff portal pages
+   Used by: staff/login.php, staff/portal.php,
+            staff/change_password.php
+   ============================================= */
+
+/* ---------- General Reset ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f3f4f6;
+}
+
+/* ---------- Top Bar ---------- */
+.topbar {
+    background: #1a1a2e;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.topbar span {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.topbar a {
+    color: #e94560;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Main Container ---------- */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ---------- Welcome Banner ---------- */
+.welcome {
+    background: #1a1a2e;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+
+.welcome p {
+    color: #aaa;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ---------- Section Headings ---------- */
+h3.section-heading {
+    font-size: 17px;
+    color: #1a1a2e;
+    border-left: 4px solid #e94560;
+    padding-left: 10px;
+    margin: 25px 0 15px 0;
+}
+
+/* ---------- Table Box ---------- */
+.table-box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f9fafb;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* ---------- Level Tags ---------- */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.tag-ug {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.tag-pg {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ---------- No Data Message ---------- */
+.no-data {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ---------- Links ---------- */
+a {
+    color: #e94560;
+}
+
+/* ---------- Login Page ---------- */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a1a2e;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    margin: 0 0 5px 0;
+    font-size: 22px;
+    color: #1a1a2e;
+}
+
+.login-box p {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #e94560;
+    outline: none;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #c73652;
+}
+
+/* ---------- Alert Messages ---------- */
+.alert-error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #fca5a5;
+}
+
+.alert-success {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #6ee7b7;
+}
+
+/* ---------- Info / Hint Box ---------- */
+.hint-box {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #0369a1;
+    margin-top: 15px;
+}
+
+.hint-box strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ---------- Back / Footer Links ---------- */
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #e94560;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Change Password Form ---------- */
+.form-box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 500px;
+}
+
+.hint-text {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+.form-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #c73652;
+}
+
+h2.page-title {
+    font-size: 20px;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
