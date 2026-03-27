@@ -1,0 +1,427 @@
+/* =============================================
+   style.css — Student-facing pages
+   Used by: index.php, programme.php
+   ============================================= */
+
+/* ---------- General Reset ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ---------- Navigation Bar ---------- */
+nav {
+    background-color: #1a1a2e;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .logo span {
+    color: #e94560;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* ---------- Hero Banner ---------- */
+.hero {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #e94560;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+/* ---------- Filter / Search Bar ---------- */
+.filter-bar {
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-bar input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 250px;
+}
+
+.filter-bar button,
+.filter-bar a {
+    padding: 8px 16px;
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.filter-bar button:hover,
+.filter-bar a:hover {
+    background-color: #e94560;
+}
+
+.filter-bar a.active {
+    background-color: #e94560;
+}
+
+/* ---------- Main Container ---------- */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1a1a2e;
+}
+
+/* ---------- Programme Cards Grid ---------- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Single card */
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Coloured strip at top of card */
+.card-top {
+    background-color: #1a1a2e;
+    height: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    font-size: 16px;
+    margin: 0 0 6px 0;
+    color: #1a1a2e;
+}
+
+.card-body p {
+    font-size: 13px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* ---------- Level Tags (UG / PG) ---------- */
+.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.tag-ug {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.tag-pg {
+    background: #f8d7da;
+    color: #842029;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c73652;
+}
+
+/* ---------- Alert Messages ---------- */
+.alert-success {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 12px 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #6ee7b7;
+}
+
+.alert-error {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #fca5a5;
+}
+
+/* ---------- Programme Detail Page ---------- */
+.page-header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 30px 20px;
+}
+
+.page-header .breadcrumb {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.page-header .breadcrumb a {
+    color: #e94560;
+    text-decoration: none;
+}
+
+.page-header h1 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.page-header p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Year label above module table */
+.year-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin: 20px 0 10px 0;
+}
+
+/* Module table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 13px;
+}
+
+td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #f9f9f9;
+}
+
+/* ---------- Register Interest Form ---------- */
+.form-box {
+    background: #1a1a2e;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.form-box h2 {
+    color: white;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 6px;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.form-box label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"] {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #2a2a3e;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-box button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-box button:hover {
+    background-color: #c73652;
+}
+
+/* ---------- Withdraw Interest Box ---------- */
+.withdraw-box {
+    background: #fff5f5;
+    border: 1px solid #fca5a5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.withdraw-box h3 {
+    color: #991b1b;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.withdraw-box p {
+    font-size: 13px;
+    color: #666;
+}
+
+.withdraw-box input[type="email"] {
+    padding: 8px 12px;
+    border: 1px solid #fca5a5;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 250px;
+}
+
+.withdraw-box button {
+    padding: 8px 16px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.withdraw-box button:hover {
+    background-color: #b91c1c;
+}
+
+/* ---------- Back Link ---------- */
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    color: #e94560;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ---------- No Results ---------- */
+.no-results {
+    text-align: center;
+    color: #888;
+    padding: 40px;
+}
+
+/* ---------- Section Headings (detail page) ---------- */
+h2.section-heading {
+    font-size: 20px;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    color: #1a1a2e;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #1a1a2e;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+footer a {
+    color: #e94560;
+    text-decoration: none;
+}
